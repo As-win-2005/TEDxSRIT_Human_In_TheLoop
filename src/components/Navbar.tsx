@@ -4,10 +4,11 @@ import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', path: '/' },
+  { name: 'About TEDx', path: '/about' },
   { name: 'Speakers', path: '/speakers' },
   { name: 'Partners', path: '/partners' },
-  { name: 'About', path: '/about' },
-  { name: 'Team', path: '/team' },
+  
+  // { name: 'Team', path: '/team' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -34,8 +35,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-1">
-          <span className="text-2xl font-black text-ted-gradient">TED</span>
-          <span className="text-xl font-black text-foreground" style={{ textShadow: '0 0 10px hsla(348, 100%, 45%, 0.5)' }}>x</span>
+          <span className="text-2xl font-black text-ted-gradient">TEDx</span>
+          
           <span className="text-2xl font-black text-white-gradient">SRIT</span>
         </Link>
 
@@ -45,7 +46,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className={`nav-link text-sm font-medium uppercase tracking-wider ${
+              className={`nav-link text-sm font-medium tracking-wider ${
                 location.pathname === item.path ? 'text-foreground after:w-full' : ''
               }`}
             >

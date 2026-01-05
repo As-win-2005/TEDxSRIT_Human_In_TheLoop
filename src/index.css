@@ -71,6 +71,9 @@
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
+
+  /* Keep default cursor visible - custom cursor follows with delay */
+  /* The custom cursor will trail behind the default cursor */
 }
 
 @layer components {
@@ -305,3 +308,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(348, 100%, 55%);
 }
+

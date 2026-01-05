@@ -7,7 +7,7 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
     const timer = setTimeout(() => {
       setShow(false);
       onComplete();
-    }, 3000);
+    }, 3900);
 
     return () => clearTimeout(timer);
   }, [onComplete]);

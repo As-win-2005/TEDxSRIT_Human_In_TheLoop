@@ -3,10 +3,11 @@ import { MapPin, Mail, Phone } from 'lucide-react';
 
 const footerLinks = [
   { name: 'Home', path: '/' },
+  { name: 'About TEDx', path: '/about' },
   { name: 'Speakers', path: '/speakers' },
   { name: 'Partners', path: '/partners' },
-  { name: 'About', path: '/about' },
-  { name: 'Team', path: '/team' },
+  
+  // { name: 'Team', path: '/team' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -24,15 +25,14 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
           {/* Logo & Description */}
           <div className="space-y-4">
             <div className="flex items-center gap-1">
-              <span className="text-3xl font-black text-ted-gradient">TED</span>
-              <span className="text-2xl font-black text-foreground" style={{ textShadow: '0 0 10px hsla(348, 100%, 45%, 0.5)' }}>x</span>
+              <span className="text-3xl font-black text-ted-gradient">TEDx</span>
               <span className="text-3xl font-black text-white-gradient">SRIT</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Ideas worth spreading. Join us for an inspiring journey of innovation, 
               creativity, and human connection at TEDxSRIT.
             </p>
-            <p className="text-primary text-sm font-medium">Human in the Loop</p>
+            {/* <p className="text-primary text-sm font-medium">Human in the Loop</p> */}
           </div>
 
           {/* Quick Links */}
@@ -62,13 +62,13 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Mail size={18} className="text-primary flex-shrink-0" />
-                <a href="mailto:tedxsrit@srit.edu.in" className="hover:text-primary transition-colors">
-                  tedxsrit@srit.edu.in
+                <a href="mailto:tedxsrit@sritcbe.ac.in" className="hover:text-primary transition-colors">
+                  tedxsrit@sritcbe.ac.in
                 </a>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Phone size={18} className="text-primary flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 7298529083</span>
               </li>
             </ul>
           </div>
@@ -95,9 +95,6 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm text-center md:text-left">
             © 2025 TEDxSRIT. This independent TEDx event is operated under license from TED.
-          </p>
-          <p className="text-muted-foreground text-sm">
-            Developed by <span className="text-primary font-medium">students of SRIT</span>
           </p>
         </div>
       </div>
